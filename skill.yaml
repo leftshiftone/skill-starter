@@ -1,0 +1,35 @@
+# skill identifier
+owner: "leftshiftone"
+name: "skill-template"
+version: "1.0.0"
+
+# version control
+scm: "https://skills.leftshift.one"
+
+# skill license
+license:
+  name: "Apache 2.0"
+  url: "https://apache.org/licenses/LICENSE-2.0.html"
+visibility: "public"
+
+# additional properties
+labels: []
+authors: ["christian.weber@leftshift.one"]
+
+# the image with a python runtime
+image: leftshiftone/python-3.8:latest
+
+resources:
+  cpu:
+    min: 0.5
+  memory:
+    min: 0.5
+
+schema: []
+composable: true
+network_access: false # no internet access necessary
+
+permissions: []
+
+# the main class to execute
+handler: "handler"
